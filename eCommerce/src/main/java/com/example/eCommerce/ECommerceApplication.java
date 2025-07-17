@@ -9,6 +9,7 @@ public class ECommerceApplication {
 
 	public static void main(String[] args) {
 		
+		// ApplicationContext context1 = new ClassPathXmlApplicationContext();
 		ApplicationContext context =  SpringApplication.run(ECommerceApplication.class, args);
 
 		Dev obj = context.getBean(Dev.class);
