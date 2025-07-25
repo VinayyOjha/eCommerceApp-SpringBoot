@@ -3,7 +3,7 @@ package com.Vinay.backend.model;
 import java.math.BigDecimal;
 import java.util.Date;
 
-import jakarta.persistence.id;
+import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
@@ -23,7 +23,7 @@ public class Product {
     private int id;
 
     private String name;
-    private String desc;
+    private String description;
     private String brand;
     private BigDecimal price;
     private String category;
