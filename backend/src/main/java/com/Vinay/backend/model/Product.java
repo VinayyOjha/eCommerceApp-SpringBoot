@@ -13,6 +13,7 @@ import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.Data;
+import jakarta.persistence.Lob;
 
 @Entity // To create the table of this class
 @Data // LOMBOK: to replace the getters and setters 
@@ -33,6 +34,13 @@ public class Product {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private Date releaseDate;
     
-    private boolean available;
+private boolean available;
     private int quantity;
+
+    private String imageName;
+    private String imageType;
+
+    @Lob
+    private byte[] imageDate;
+    
 }
